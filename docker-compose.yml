@@ -1,0 +1,9 @@
+version: '3'
+services:
+  frontend:
+    build: ./ec-ui
+    volumes:
+    - ./ec-ui:/workspace/ec-ui
+    command: sleep infinity
+    ports:
+      - "3000:3000"
